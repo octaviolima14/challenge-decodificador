@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main class="apresentacao">
+
+        <section class="apresentacao__conteudo">
+            <div>
+                <textarea class="apresentacao__digite__texto" id="inputText" placeholder="Digite seu texto aqui..." rows="4" cols="50"></textarea> <br><br>
+                <p class="apresentacao__conteudo__texto">Apenas letras mínusculas e sem acento.</p>
+            </div>
+            
+                <div class="apresentacao__botoes">
+                    <button class="botao__um" onclick="criptografar()">Criptografar</button>
+                    <button class="botao__dois" onclick="descriptografar()">Descriptografar</button> <br><br>
+                </div>
+        </section>
+
+        <section class="apresentacao__conteudo">
+            <div>
+                <textarea class="apresentacao__descriptografia" id="outputText" readonly rows="4" cols="50" placeholder="Resultado aparecerá aqui..."></textarea>
+            </div>
+                <div class="apresentacao__botoes">
+                    <button class="botao__copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+        </section>  
+           
+        <!--<img class="apresentacao__imagem" src="./assets/input.png" alt="Digite seu texto">-->
+    
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Octavio Braga</p>
+    </footer>
+    <script src="criptografia.js"></script>
+</body>
+</html>
